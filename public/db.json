@@ -43,6 +43,7 @@
 
   "historico_reservas": [{
     "id": "0000",
+    "idReserva": "0000",
     "idUsuario": "0000",
     "data": "2024/07/28",
     "local": "Exemplo",
