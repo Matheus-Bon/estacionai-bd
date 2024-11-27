@@ -10,10 +10,10 @@
     },
     {
       "id": "2",
-      "nome": "Cliente User",
-      "email": "cliente@example.com",
+      "nome": "Charles",
+      "email": "charles@example.com",
       "celular": "888888888",
-      "senha": "cliente123",
+      "senha": "c123",
       "cargo": "cliente"
     },
     {
@@ -63,7 +63,7 @@
       "endereco": "Avenida Sul, 456",
       "celular": "666666666",
       "valor": 20.0,
-      "valor_tipo": "diária",
+      "valor_tipo": "diaria",
       "vagas": [
         4,
         5
