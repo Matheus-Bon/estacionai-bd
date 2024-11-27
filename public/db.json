@@ -1,58 +1,161 @@
 {
-  "usuarios": [{
-    "id": "0000",
-    "nome": "Exemplo",
-    "email": "Exemplo",
-    "celular": "Exemplo",
-    "senha": "Exemplo",
-    "cargo": "admin || cliente"
-  }],
-  
-  "veiculos": [{
-    "id": "0000",
-    "idCliente": "0000",
-    "placa": "Exemplo",
-    "cor": "Exemplo",
-    "modelo": "Exemplo"
-  }],
-
-  "estacionamentos": [{
-    "id": "0000",
-    "idAdmin": "0000",
-    "nome": "Exemplo",
-    "endereco": "Exemplo",
-    "celular": "Exemplo",
-    "vagas": [1,26,571]
-  }],
-
-  "vagas": [{
-    "id": "0000",
-    "idEstacionamento": "0000",
-    "titulo": "",
-    "ocupado": "0 || 1"
-  }],
-
-  "reservas": [{
-    "id":"0000",
-    "idUsuario": "0000",
-    "idEstacionamento": "0000",
-    "idVaga": "0000",
-    "valor": 0,
-    "status": "pendente || recusado || aprovado"
-  }],
-
-  "historico_reservas": [{
-    "id": "0000",
-    "idReserva": "0000",
-    "idUsuario": "0000",
-    "data": "2024/07/28",
-    "local": "Exemplo",
-    "veiculo": "Exemplo",
-    "placa": "Exemplo",
-    "horario": "Exemplo",
-    "valor": 0,
-    "vaga": "Exemplo",
-    "locador": "Exemplo",
-    "status": "pendente || recusado || aprovado"
-  }]
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Admin User",
+      "email": "admin@example.com",
+      "celular": "999999999",
+      "senha": "admin123",
+      "cargo": "admin"
+    },
+    {
+      "id": "2",
+      "nome": "Cliente User",
+      "email": "cliente@example.com",
+      "celular": "888888888",
+      "senha": "cliente123",
+      "cargo": "cliente"
+    },
+    {
+      "id": "3",
+      "nome": "João Silva",
+      "email": "joao@example.com",
+      "celular": "777777777",
+      "senha": "joao123",
+      "cargo": "cliente"
+    }
+  ],
+  "veiculos": [
+    {
+      "id": "1",
+      "idCliente": "2",
+      "placa": "ABC-1234",
+      "cor": "Preto",
+      "modelo": "Fusca"
+    },
+    {
+      "id": "2",
+      "idCliente": "3",
+      "placa": "XYZ-5678",
+      "cor": "Branco",
+      "modelo": "Civic"
+    }
+  ],
+  "estacionamentos": [
+    {
+      "id": "1",
+      "idAdmin": "1",
+      "nome": "Estacionamento Central",
+      "endereco": "Rua Exemplo, 123",
+      "celular": "777777777",
+      "valor": 15.67,
+      "valor_tipo": "hora",
+      "vagas": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "2",
+      "idAdmin": "1",
+      "nome": "Estacionamento Sul",
+      "endereco": "Avenida Sul, 456",
+      "celular": "666666666",
+      "valor": 20.0,
+      "valor_tipo": "diária",
+      "vagas": [
+        4,
+        5
+      ]
+    }
+  ],
+  "vagas": [
+    {
+      "id": "1",
+      "idEstacionamento": "1",
+      "titulo": "Vaga 1",
+      "ocupado": 1
+    },
+    {
+      "id": "2",
+      "idEstacionamento": "1",
+      "titulo": "Vaga 2",
+      "ocupado": 0
+    },
+    {
+      "id": "3",
+      "idEstacionamento": "1",
+      "titulo": "Vaga 3",
+      "ocupado": 0
+    },
+    {
+      "id": "4",
+      "idEstacionamento": "2",
+      "titulo": "Vaga 1",
+      "ocupado": 1
+    },
+    {
+      "id": "5",
+      "idEstacionamento": "2",
+      "titulo": "Vaga 2",
+      "ocupado": 0
+    }
+  ],
+  "reservas": [
+    {
+      "id": "1",
+      "idUsuario": "2",
+      "idEstacionamento": "1",
+      "idVaga": "1",
+      "valor": 15.67,
+      "status": "aprovado"
+    },
+    {
+      "id": "2",
+      "idUsuario": "3",
+      "idEstacionamento": "2",
+      "idVaga": "4",
+      "valor": 20.0,
+      "status": "pendente"
+    },
+    {
+      "id": "3",
+      "idUsuario": "3",
+      "idEstacionamento": "1",
+      "idVaga": "3",
+      "valor": 15.67,
+      "status": "recusado"
+    }
+  ],
+  "historico_reservas": [
+    {
+      "id": "1",
+      "idReserva": "1",
+      "idUsuario": "2",
+      "data": "2024/11/25",
+      "local": "Estacionamento Central",
+      "veiculo": "Fusca",
+      "placa": "ABC-1234",
+      "horario": "10:00 - 12:00",
+      "valor": 15.67,
+      "vaga": "Vaga 1",
+      "locador": "Admin User",
+      "status": "aprovado"
+    },
+    {
+      "id": "2",
+      "idReserva": "3",
+      "idUsuario": "3",
+      "data": "2024/11/26",
+      "local": "Estacionamento Central",
+      "veiculo": "Civic",
+      "placa": "XYZ-5678",
+      "horario": "14:00 - 16:00",
+      "valor": 15.67,
+      "vaga": "Vaga 3",
+      "locador": "Admin User",
+      "status": "recusado"
+    }
+  ]
 }
