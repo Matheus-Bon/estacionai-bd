@@ -37,6 +37,63 @@
         "placa": "AAA1111",
         "cor": "Prata"
       }
+    },
+    {
+      "id": "3",
+      "nome": "Maria",
+      "sobrenome": "Ferreira",
+      "email": "maria@example.com",
+      "cpfCnpj": "789789",
+      "telefone": "444444444",
+      "celular": "777777777",
+      "senha": "maria123",
+      "cargo": "cliente",
+      "endereco": {
+        "logradouro": "Rua Flores, 987"
+      },
+      "veiculo": {
+        "modelo": "Gol",
+        "placa": "BBB2222",
+        "cor": "Vermelho"
+      }
+    },
+    {
+      "id": "4",
+      "nome": "José",
+      "sobrenome": "Almeida",
+      "email": "jose@example.com",
+      "cpfCnpj": "565656",
+      "telefone": "555555555",
+      "celular": "999888777",
+      "senha": "jose456",
+      "cargo": "cliente",
+      "endereco": {
+        "logradouro": "Rua Nova, 234"
+      },
+      "veiculo": {
+        "modelo": "Palio",
+        "placa": "CCC3333",
+        "cor": "Branco"
+      }
+    },
+    {
+      "id": "5",
+      "nome": "Ana",
+      "sobrenome": "Oliveira",
+      "email": "ana@example.com",
+      "cpfCnpj": "323232",
+      "telefone": "222222222",
+      "celular": "888999777",
+      "senha": "ana789",
+      "cargo": "cliente",
+      "endereco": {
+        "logradouro": "Rua Bela Vista, 890"
+      },
+      "veiculo": {
+        "modelo": "Fiesta",
+        "placa": "DDD4444",
+        "cor": "Azul"
+      }
     }
   ],
   "estacionamentos": [
@@ -84,6 +141,26 @@
           "status": 1
         }
       ]
+    },
+    {
+      "id": "3",
+      "idAdmin": "1",
+      "nome": "Estacionamento Norte",
+      "endereco": "Rua Das Palmeiras, 789",
+      "valor": 20.00,
+      "valor_tipo": "diaria",
+      "vagas": [
+        {
+          "id": "6",
+          "nome": "Vaga 6",
+          "status": 0
+        },
+        {
+          "id": "7",
+          "nome": "Vaga 7",
+          "status": 0
+        }
+      ]
     }
   ],
   "reservas": [
@@ -97,6 +174,50 @@
       "veiculo": "Corsa",
       "placa": "AAA1111",
       "cor": "Prata"
+    },
+    {
+      "id": "2",
+      "idUsuario": "3",
+      "idEstacionamento": "2",
+      "idVaga": "3",
+      "valor": 10.50,
+      "status": "pendente",
+      "veiculo": "Gol",
+      "placa": "BBB2222",
+      "cor": "Vermelho"
+    },
+    {
+      "id": "3",
+      "idUsuario": "4",
+      "idEstacionamento": "1",
+      "idVaga": "2",
+      "valor": 15.67,
+      "status": "pendente",
+      "veiculo": "Palio",
+      "placa": "CCC3333",
+      "cor": "Branco"
+    },
+    {
+      "id": "4",
+      "idUsuario": "5",
+      "idEstacionamento": "2",
+      "idVaga": "5",
+      "valor": 10.50,
+      "status": "pendente",
+      "veiculo": "Fiesta",
+      "placa": "DDD4444",
+      "cor": "Azul"
+    },
+    {
+      "id": "5",
+      "idUsuario": "3",
+      "idEstacionamento": "3",
+      "idVaga": "6",
+      "valor": 20.00,
+      "status": "pendente",
+      "veiculo": "Gol",
+      "placa": "BBB2222",
+      "cor": "Vermelho"
     }
   ],
   "historico_reservas": [
@@ -112,6 +233,19 @@
       "veiculo": "Corsa",
       "placa": "AAA1111",
       "horario": "14:00 - 16:00"
+    },
+    {
+      "id": "2",
+      "idUsuario": "3",
+      "idEstacionamento": "2",
+      "idVaga": "5",
+      "valor": 10.50,
+      "status": "concluida",
+      "data": "2024-12-01T12:30:00Z",
+      "local": "Estacionamento Sul",
+      "veiculo": "Gol",
+      "placa": "BBB2222",
+      "horario": "10:00 - 12:00"
     }
   ]
 }
