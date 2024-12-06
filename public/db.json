@@ -53,12 +53,12 @@
         {
           "id": "1",
           "nome": "Vaga 1",
-          "status": "vago"
+          "status": 0
         },
         {
           "id": "2",
           "nome": "Vaga 2",
-          "status": "ocupada"
+          "status": 1
         }
       ]
     }
