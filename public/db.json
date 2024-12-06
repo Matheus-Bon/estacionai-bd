@@ -2,10 +2,10 @@
   "usuarios": [
     {
       "id": "1",
-      "nome": "Admin User",
+      "nome": "Admin",
       "email": "admin@example.com",
       "celular": "999999999",
-      "senha": "admin123",
+      "senha": "123",
       "cargo": "admin"
     },
     {
@@ -14,14 +14,6 @@
       "email": "charles@example.com",
       "celular": "888888888",
       "senha": "c123",
-      "cargo": "cliente"
-    },
-    {
-      "id": "3",
-      "nome": "João Silva",
-      "email": "joao@example.com",
-      "celular": "777777777",
-      "senha": "joao123",
       "cargo": "cliente"
     }
   ],
@@ -70,23 +62,7 @@
       "idEstacionamento": "1",
       "idVaga": "1",
       "valor": 15.67,
-      "status": "aprovado"
-    },
-    {
-      "id": "2",
-      "idUsuario": "3",
-      "idEstacionamento": "2",
-      "idVaga": "4",
-      "valor": 20.0,
       "status": "pendente"
-    },
-    {
-      "id": "3",
-      "idUsuario": "3",
-      "idEstacionamento": "1",
-      "idVaga": "3",
-      "valor": 15.67,
-      "status": "recusado"
     }
   ],
   "historico_reservas": [
