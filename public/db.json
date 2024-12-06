@@ -47,59 +47,20 @@
       "idAdmin": "1",
       "nome": "Estacionamento Central",
       "endereco": "Rua Exemplo, 123",
-      "celular": "777777777",
       "valor": 15.67,
       "valor_tipo": "hora",
       "vagas": [
-        1,
-        2,
-        3
+        {
+          "id": "1",
+          "nome": "Vaga 1",
+          "status": "vago"
+        },
+        {
+          "id": "2",
+          "nome": "Vaga 2",
+          "status": "ocupada"
+        }
       ]
-    },
-    {
-      "id": "2",
-      "idAdmin": "1",
-      "nome": "Estacionamento Sul",
-      "endereco": "Avenida Sul, 456",
-      "celular": "666666666",
-      "valor": 20.0,
-      "valor_tipo": "diaria",
-      "vagas": [
-        4,
-        5
-      ]
-    }
-  ],
-  "vagas": [
-    {
-      "id": "1",
-      "idEstacionamento": "1",
-      "titulo": "Vaga 1",
-      "ocupado": 1
-    },
-    {
-      "id": "2",
-      "idEstacionamento": "1",
-      "titulo": "Vaga 2",
-      "ocupado": 0
-    },
-    {
-      "id": "3",
-      "idEstacionamento": "1",
-      "titulo": "Vaga 3",
-      "ocupado": 0
-    },
-    {
-      "id": "4",
-      "idEstacionamento": "2",
-      "titulo": "Vaga 1",
-      "ocupado": 1
-    },
-    {
-      "id": "5",
-      "idEstacionamento": "2",
-      "titulo": "Vaga 2",
-      "ocupado": 0
     }
   ],
   "reservas": [
